@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" sync-c="true" revision="master"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/openembedded" name="embedded"/>
+  <remote fetch="git://github.com/freescale" name="freescale"/>
+  <remote fetch="git://github.com/meta-qt5" name="qt5"/>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="caf"/>
+
+  <project remote="yocto" revision="sumo" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="sumo" name="meta-freescale" path="sources/meta-freescale"/>
+  <project remote="embedded" revision="sumo" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="sumo" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="sumo" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+  <project remote="freescale" revision="sumo" name="Documentation" path="sources/Documentation"/>
+  <project remote="freescale" revision="sumo" name="fsl-community-bsp-base" path="sources/base">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="qt5" revision="sumo" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="caf" revision="sumo" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release">
+    <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+    <linkfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+</manifest>
