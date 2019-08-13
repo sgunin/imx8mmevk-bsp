@@ -3,7 +3,7 @@ This repo is used to download manifests for i.MX BSP releases for NXP i.MX 8M mi
 
 Specific instructions will reside in READMEs in each branch.
 
-Original repo avialable via link - https://source.codeaurora.org/external/imx/imx-manifest/tree/README?h=imx-linux-sumo.
+Original repo avialable via link - https://source.codeaurora.org/external/imx/imx-manifest/tree/?h=imx-linux-sumo.
 
 This manual describes how to deploy the image build environment under Ubuntu 16.04.5.
 
