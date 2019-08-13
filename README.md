@@ -20,9 +20,13 @@ Install the `repo` utility:
 Download the BSP source:
 
 `$: mkdir imx8mmevk`
+
 `$: cd imx8mmevk`
+
 `$: repo init -u https://github.com/sgunin/imx8mmevk.git -b <branch>`
+
 `$: repo sync`
+
 
 where <branch> is Yocto branch name (thud, sumo etc).
 
