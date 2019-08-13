@@ -22,7 +22,7 @@
 
   <project remote="qt5" revision="sumo" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="caf" revision="sumo" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release">
+  <project remote="caf" revision="sumo-4.14.98-2.1.0" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release">
     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
     <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
