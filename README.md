@@ -18,12 +18,12 @@ Install the `repo` utility:
 `$: apt install repo`
 
 Download the BSP source:
-`
-$: mkdir imx8mmevk
-$: cd imx8mmevk
-$: repo init -u https://github.com/sgunin/imx8mmevk.git -b <branch>
-$: repo sync
-`
+
+`$: mkdir imx8mmevk`
+`$: cd imx8mmevk`
+`$: repo init -u https://github.com/sgunin/imx8mmevk.git -b <branch>`
+`$: repo sync`
+
 where <branch> is Yocto branch name (thud, sumo etc).
 
 Yocto manual avialable via link https://www.yoctoproject.org/docs/?section=developer-manuals
