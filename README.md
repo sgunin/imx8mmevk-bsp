@@ -8,19 +8,17 @@ Original repo avialable via link - https://source.codeaurora.org/external/imx/im
 This manual describes how to deploy the image build environment under Ubuntu 16.04.5.
 
 Install necessary packages:
-[source,console]
+
 $: sudo apt install build-essential git-core libncurses5-dev flex bison texinfo zip unzip zlib1g-dev gettext u-boot-tools g++ xz-utils mtd-utils gawk diffstat gcc-multilib lzop bc chrpath
 
 To get the BSP you need to have `repo` installed and use it as:
 
 Install the `repo` utility:
 
-[source,console]
 $: apt install repo
 
 Download the BSP source:
 
-[source,console]
 $: mkdir imx8mmevk
 $: cd imx8mmevk
 $: repo init -u https://github.com/sgunin/imx8mmevk.git -b <branch>
