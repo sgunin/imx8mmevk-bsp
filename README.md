@@ -33,3 +33,15 @@ where <branch> is Yocto branch name (thud, sumo etc).
 Yocto manual avialable via link https://www.yoctoproject.org/docs/?section=developer-manuals
 
 At the end of the commands you have every metadata you need to start work with.
+
+To start a simple image build:
+
+`$: DISTRO=imx8mmevk-wayland MACHINE=imx8mmevkit source fsl-setup-release.sh -b build-imx8mmevk-wayland`
+
+Build console image
+
+`$: bitbake fsl-image-validation-imx`
+
+After the build is finished, you can browse the catalog with the build results
+
+`$: ls -la tmp/deploy/images/imx8mmevkit`
