@@ -8,6 +8,7 @@
   <remote fetch="git://github.com/freescale" name="freescale"/>
   <remote fetch="git://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="caf"/>
+  <remote fetch="git://github.com/sgunin" name="imx8mmevk-extra"/>
 
   <project remote="yocto" revision="sumo" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="sumo" name="meta-freescale" path="sources/meta-freescale"/>
@@ -20,7 +21,8 @@
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="qt5" revision="sumo" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="qt5" revision="sumo" name="meta-qt5" path="sources/meta-qt5"/>
+  <project remote="imx8mmevk-extra" revision="sumo" name="imx8mmevk-extra" path="sources/meta-imx8mmevk-extra"/>
 
   <project remote="caf" revision="sumo-4.14.98-2.1.0" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release">
     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
