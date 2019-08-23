@@ -16,16 +16,11 @@
 
   <project remote="freescale" revision="sumo" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
   <project remote="freescale" revision="sumo" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
-  <project remote="freescale" revision="sumo" name="Documentation" path="sources/Documentation"/>
-  <project remote="freescale" revision="sumo" name="fsl-community-bsp-base" path="sources/base">
-    <linkfile dest="setup-environment" src="setup-environment"/>
-  </project>
 
   <project remote="qt5" revision="sumo" name="meta-qt5" path="sources/meta-qt5"/>
-  <project remote="imx8mmevk-extra" revision="sumo" name="imx8mmevk-extra" path="sources/meta-imx8mmevk-extra"/>
-
-  <project remote="caf" revision="sumo-4.14.98-2.1.0" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release">
-    <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
-    <linkfile src="imx/README" dest="README-IMXBSP"/>
+  <project remote="caf" revision="sumo-4.14.98-2.1.0" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release"/>
+  
+  <project remote="imx8mmevk-extra" revision="sumo" name="imx8mmevk-extra" path="sources/meta-imx8mmevk-extra">
+    <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 </manifest>
